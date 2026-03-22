@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --background: 40 20% 97%;
+  --foreground: 20 10% 12%;
+  --card: 40 20% 100%;
+  --card-foreground: 20 10% 12%;
+  --primary: 0 60% 45%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 30 15% 93%;
+  --secondary-foreground: 20 10% 18%;
+  --muted: 30 10% 89%;
+  --muted-foreground: 20 5% 42%;
+  --accent: 30 15% 93%;
+  --accent-foreground: 20 10% 12%;
+  --border: 30 12% 87%;
+  --ring: 0 55% 45%;
+  --radius: 1rem;
+
+  --noir: 220 15% 6%;
+  --noir-raised: 220 12% 10%;
+  --noir-muted: 220 8% 16%;
+  --noir-text: 220 10% 92%;
+  --noir-text-muted: 220 5% 50%;
+}
+
+@theme {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-border: hsl(var(--border));
+  --color-ring: hsl(var(--ring));
+  --color-noir: hsl(var(--noir));
+  --color-noir-raised: hsl(var(--noir-raised));
+  --color-noir-muted: hsl(var(--noir-muted));
+  --color-noir-text: hsl(var(--noir-text));
+  --color-noir-text-muted: hsl(var(--noir-text-muted));
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  min-height: 100vh;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
