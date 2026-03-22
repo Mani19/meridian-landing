@@ -82,12 +82,10 @@ function Hero() {
             ))}
           </div>
 
-          <h1 className="text-[56px] md:text-[80px] lg:text-[88px] font-bold text-white tracking-tight leading-[0.95] mb-8 max-w-[900px] mx-auto">
-            The operating
+          <h1 className="text-[48px] md:text-[64px] lg:text-[72px] font-bold text-white tracking-tight leading-[1] mb-8 max-w-[800px] mx-auto">
+            The operating system
             <br />
-            system for
-            <br />
-            modern commerce
+            for modern commerce
           </h1>
 
           <p className="text-[18px] md:text-[20px] text-white/45 leading-[1.6] max-w-[520px] mx-auto mb-10">
