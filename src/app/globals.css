@@ -51,7 +51,7 @@
 }
 
 body {
-  background-color: hsl(var(--background));
+  background-color: hsl(var(--foreground));
   color: hsl(var(--foreground));
   min-height: 100vh;
 }
@@ -62,4 +62,27 @@ body {
 }
 *::-webkit-scrollbar {
   display: none;
+}
+
+/* Hero cinematic background */
+.hero-bg {
+  background:
+    radial-gradient(ellipse 120% 80% at 50% -20%, hsla(20, 40%, 30%, 0.5) 0%, transparent 60%),
+    radial-gradient(ellipse 80% 60% at 30% 20%, hsla(0, 50%, 25%, 0.3) 0%, transparent 50%),
+    radial-gradient(ellipse 80% 60% at 70% 30%, hsla(30, 40%, 20%, 0.25) 0%, transparent 50%),
+    radial-gradient(ellipse 100% 100% at 50% 100%, hsla(220, 15%, 6%, 1) 0%, transparent 60%),
+    hsl(220, 15%, 8%);
+}
+
+/* Product screenshot shadow for depth */
+.screenshot-shadow {
+  box-shadow:
+    0 25px 50px -12px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.screenshot-shadow-sm {
+  box-shadow:
+    0 10px 30px -8px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.06);
 }
